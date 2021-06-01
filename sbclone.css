@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    background: #d4e9e2;
+}
+
+.header{
+    padding: 10px 30px;
+    background-color: #f1f1f1;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector a{
+    display: flex;
+    align-items: center;
+}
+
+.selector ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.selector ul li{
+    display: flex;
+    padding: 0px 10px;
+    list-style-type: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 102px;
+}
+
+.findastore{
+    margin-right: 30px;
+}
+
+.signin{
+    margin-right: 15px;
+}
+
+.first.selector{
+    
+}
+
+.last.selector{
+padding: 0px 1000px;
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 14px;
+    color: black;
+    border: 1px solid;
+}
+
+.seperator{
+    
+}
