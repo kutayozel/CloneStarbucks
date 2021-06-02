@@ -14,8 +14,11 @@ body{
 
 .selector{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
+}
+
+.first.selector{
+    margin-right: 55%;
 }
 
 .selector a{
@@ -53,14 +56,6 @@ body{
     margin-right: 15px;
 }
 
-.first.selector{
-    
-}
-
-.last.selector{
-padding: 0px 1000px;
-}
-
 button{
     padding: 5px 10px;
     border-radius: 14px;
@@ -69,5 +64,6 @@ button{
 }
 
 .seperator{
-    
+    position: relative;
+    background: #1e3932;
 }
