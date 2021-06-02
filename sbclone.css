@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background: #d4e9e2;
+    background: rgb(212, 233, 226);
 }
 
 .header{
@@ -63,7 +63,16 @@ button{
     border: 1px solid;
 }
 
-.seperator{
-    position: relative;
+.flag{
+    height: 45px;
     background: #1e3932;
+}
+
+.flag a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 15%;
+    font-weight: bold;
+    color: white;
 }
