@@ -1,5 +1,7 @@
-body{
+body,html{
     margin: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .header{
@@ -18,7 +20,8 @@ body{
 }
 
 .first.selector{
-    margin-right: 55%;
+    flex-grow: 1;
+    margin-left: 15px;
 }
 
 .selector a{
@@ -28,6 +31,7 @@ body{
 
 .selector ul{
     display: flex;
+    padding-left: 0px;
     height: 100%;
     width: 100%;
 }
@@ -79,7 +83,8 @@ button{
 
 .heroimage{
     background-image: url("imgs/starbucksclonestar.jpg");
-    height: 900px;
+    max-width: 100%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
