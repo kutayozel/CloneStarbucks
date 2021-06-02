@@ -1,11 +1,11 @@
 body{
     margin: 0px;
-    background: rgb(212, 233, 226);
 }
 
 .header{
     padding: 10px 30px;
     background-color: #f1f1f1;
+    z-index: 1000;
 }
 .navbar{
     display: flex;
@@ -75,4 +75,19 @@ button{
     margin-left: 15%;
     font-weight: bold;
     color: white;
+}
+
+.heroimage{
+    background-image: url("imgs/starbucksclonestar.jpg");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.herotext{
+    position: absolute;
+    top: 15%;
+    left: 5%;
 }
