@@ -99,3 +99,37 @@ button{
     top: 15%;
     left: 5%;
 }
+
+.getstart{
+    margin-top: 100px;
+}
+
+.getstart img{
+    height: 50px;
+    width: 50px;
+}
+
+.getheader{
+    text-align: center;
+}
+
+.getbody{
+    display: flex;
+    text-align: center;
+    margin: 0px 5vw;
+    margin-bottom: 128px;
+    padding-top: 48px;
+    justify-content: space-between;
+}
+
+.getcontent{
+    width: 33.3333%;
+}
+
+.one.getcontent{
+    margin-right: 25px;
+}
+
+.two.getcontent{
+    margin-right: 25px;
+}
