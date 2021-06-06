@@ -1,7 +1,7 @@
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
-var btnContainer = document.querySelector('.tablist');
-var btns = btnContainer.getElementsByClassName('tabpoints');
+
+document.getElementById("defaultOpen").click();
 
 window.onscroll = function(){
     myFunction()
