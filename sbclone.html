@@ -84,39 +84,75 @@
         </div>
         <div class="faves-bottom">
             <div class="tablist">
-                <button class="tabpoints">
+                <button class="tabpoints" onclick="openTab(event, '25')">
                     <h3>
                         25 <span>★</span>
                     </h3>
                 </button>
-                <button class="tabpoints">
+                <button class="tabpoints" onclick="openTab(event, '50')">
                     <h3>
                         50 <span>★</span>
                     </h3>
                 </button>
-                <button class="tabpoints">
+                <button class="tabpoints" onclick="openTab(event, '150')">
                     <h3>
                         150 <span>★</span>
                     </h3>
                 </button>
-                <button class="tabpoints">
+                <button class="tabpoints" onclick="openTab(event, '200')">
                     <h3>
                         200 <span>★</span>
                     </h3>
                 </button>
-                <button class="tabpoints">
+                <button class="tabpoints" onclick="openTab(event, '400')">
                     <h3>
                         400 <span>★</span>
                     </h3>
                 </button>
             </div>
-            <div class="drink">
+            <div class="drink" id="25" >
                 <div class="drinkimg">
-                    <img src="imgs/coffee.jpg">
+                    <img src="imgs/sb25.png">
                 </div>
                 <div class="drinktext">
                     <h3>Customize your drink</h3>
-                    <p>Make your drink just right with an extra espresso<br> shot, dairy substitute or a dash of your favorite<br> syrup.</p>
+                    <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup.</p>
+                </div>
+            </div>
+            <div class="drink" id="50">
+                <div class="drinkimg">
+                    <img src="imgs/sb50.png">
+                </div>
+                <div class="drinktext">
+                    <h3>Brewed hot coffee, bakery item or hot tea</h3>
+                    <p>Pair coffee cake or an almond croissant with your fresh cup of hot brew.</p>
+                </div>
+            </div>
+            <div class="drink" id="150">
+                <div class="drinkimg">
+                    <img src="imgs/sb150.png">
+                </div>
+                <div class="drinktext">
+                    <h3>Handcrafted drink, hot breakfast or parfait</h3>
+                    <p>Have a really good morning with a breakfast sandwich, oatmeal or your favorite drink.</p>
+                </div>
+            </div>
+            <div class="drink" id="200">
+                <div class="drinkimg">
+                    <img src="imgs/sb200.png">
+                </div>
+                <div class="drinktext">
+                    <h3>Salad, sandwich or protein box</h3>
+                    <p>Nourish your day with a hearty Chipotle Chicken Wrap or Eggs & Cheese Protein Box.</p>
+                </div>
+            </div>
+            <div class="drink" id="400">
+                <div class="drinkimg">
+                    <img src="imgs/sb400.png">
+                </div>
+                <div class="drinktext">
+                    <h3>Select merchandise or at-home coffee</h3>
+                    <p>Take home a signature cup, a bag of coffee or your choice of select coffee accessories.</p>
                 </div>
             </div>
         </div>

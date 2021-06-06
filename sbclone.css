@@ -7,6 +7,10 @@ body,html{
     height: 100%;
 }
 
+button{
+    cursor: pointer;
+}
+
 .header{
     padding: 10px 30px;
     background-color: #f1f1f1;
@@ -134,9 +138,23 @@ button{
     margin-right: 25px;
 }
 
+.tablist{
+    overflow: hidden;
+}
+
 .faves-top, .tablist{
     text-align: center;
     background: #f1f8f6;
+}
+
+.tablist button{
+    border: none;
+    background-color: #f1f8f6;
+    border-radius: 0px;
+}
+
+.tablist button.active{
+    background-color: forestgreen;
 }
 
 .faves-top h2{
@@ -152,6 +170,11 @@ button{
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
     background: #d4e9e2;
+}
+
+.drinktext{
+    max-width: 375px;
+    padding: 0rem 1.6rem;
 }
 
 .drinkimg img{
