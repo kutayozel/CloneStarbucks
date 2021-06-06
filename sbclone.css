@@ -134,20 +134,29 @@ button{
     margin-right: 25px;
 }
 
-.faves-top{
+.faves-top, .tablist{
     text-align: center;
+    background: #f1f8f6;
 }
 
-.tablist{
-    text-align: center;
-
+.faves-top h2{
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .drink{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    background: #d4e9e2;
 }
 
 .drinkimg img{
-    height: 55px;
-    width: 55px;
+    max-width: 375px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 4.8rem;
 }
