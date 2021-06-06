@@ -30,7 +30,7 @@ function openTab(evt, drinkSize){
     {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(drinkSize).style.display = "block";
+    document.getElementById(drinkSize).style.display = "flex";
     evt.currentTarget.className += "active";
 }
 

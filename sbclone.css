@@ -164,7 +164,7 @@ button{
 }
 
 .drink{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding-top: 3.2rem;
