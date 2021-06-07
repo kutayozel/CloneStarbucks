@@ -153,8 +153,8 @@ button{
     border-radius: 0px;
 }
 
-.tablist button.active{
-    background-color: forestgreen;
+.tablist .tabpoints .active{
+    background: forestgreen;
 }
 
 .faves-top h2{
@@ -182,4 +182,19 @@ button{
     padding-top: 0px;
     padding-bottom: 0px;
     margin-right: 4.8rem;
+}
+
+.extras{
+    text-align: center;
+    margin: 150px 60px;
+    margin-bottom: 150px;
+}
+
+.widgets{
+    display: flex;
+    justify-content: space-between;
+}
+
+.widgetcontent{
+    padding: 0px 15px;
 }
