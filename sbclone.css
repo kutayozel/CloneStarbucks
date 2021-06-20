@@ -201,27 +201,39 @@ button{
 }
 
 .modalContent{
+    display: none;
     position: fixed;
     max-height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
     justify-content: center;
-    visibility: hidden;
+    z-index: 1;
 }
 
-.sa{
+.mask{
+    position: fixed;
+    height: 100%;
+    inset: 0;
+    background: #000;
+    opacity: .38;   
+    z-index: 1;
+}
+
+.modaltab{
     position: relative;
-    z-index: 2;
     background: #fff;
     border-radius: 8px;
     align-self: center;
     max-width: 420px;
     max-height: 1000px;
-    opacity: 1;
+    z-index: 2;
     overflow: auto;
+}
+
+body.modalContent{
+    overflow: hidden;
 }
 
 .paylineheader{
@@ -230,8 +242,22 @@ button{
 
 .payline{
     display: flex;
-    justify-content: space-between;
+    text-align: left;
     margin-left: 100px;
     margin-right: 300px;
 }
 
+.firstcolmn{
+    width: 16.66666%;
+}
+
+.secondcolmn, .thirdcolmn{
+    width: 33.3333%;
+}
+
+.close{
+    display: inline-block;
+    content: "\00d7";
+    height: 50px;
+    width: 50px;
+}

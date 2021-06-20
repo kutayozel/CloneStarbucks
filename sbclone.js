@@ -34,3 +34,32 @@ function openTab(evt, drinkSize){
     evt.currentTarget.className += "active";
 }
 
+var modal = document.querySelector(".modalContent");
+
+var btn = document.getElementById("modalBtn");
+
+var mask = document.querySelector(".mask");
+
+/*closes the modal
+var close = document.getElementsByClassName("close")[0];
+
+span.onclick = () => modal.style.display = "none";
+*/
+
+btn.onclick = function() {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+window.onclick = function(event) {
+    if (event.target == mask) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
+
+//window.onclick = ((a) => console.log(a.target));
+
+/*function openModal(){
+    btn.onclick =modal.style.display = "flex";
+}*/
