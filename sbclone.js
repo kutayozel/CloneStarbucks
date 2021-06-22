@@ -40,15 +40,14 @@ var btn = document.getElementById("modalBtn");
 
 var mask = document.querySelector(".mask");
 
-/*closes the modal
-var close = document.getElementsByClassName("close")[0];
+var closetab = document.querySelector(".close");
 
-span.onclick = () => modal.style.display = "none";
-*/
+closetab.onclick = (() => modal.style.display = "none");
 
+modal.style.display = "none";
 btn.onclick = function() {
     modal.style.display = "flex";
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = "auto";
 }
 
 window.onclick = function(event) {
