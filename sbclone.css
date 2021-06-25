@@ -246,9 +246,17 @@ header button{
     border: none;
 }
 
+.modallist{
+    height: 100%;
+    
+}
+
 .modalCard{
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    
     text-align: center;
 }
 
@@ -267,6 +275,7 @@ header button{
 }
 
 .sliders{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,3 +328,8 @@ header button{
     width: 33.3333%;
 }
 
+.carousel.round.current-slide{
+    background: rgba(0,0,0,.70);
+}
+
+.is-hidden{display: none;}
