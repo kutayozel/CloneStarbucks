@@ -74,8 +74,8 @@ const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 slides[0].style.left = '0px';
-slides[1].style.left = '254px';
-slides[2].style.left = '508px';
+slides[1].style.left = '380px';
+slides[2].style.left = '760px';
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
     track.style.transform = 'translateX(-' + targetSlide.style.left +')';
