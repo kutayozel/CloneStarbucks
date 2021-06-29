@@ -258,7 +258,6 @@ header button{
 }
 
 .modalCard{
-    /* position: relative;  */
     position: absolute;
     padding: 0px;
     margin: 0;
@@ -288,21 +287,22 @@ header button{
     bottom: 10px;
     display: flex;
     align-items: center;
-    width: 340px;
+    justify-content: center;
+    width: 380px;
     height: 30px;
 }
 .carousel.ok.left{
     position: absolute;
-    left: 60px;
+    left: 80px;
 }
 .right.ok.carousel{
     position: absolute;
-    right: 60px;
+    right: 80px;
 }
 .dots{
     position: absolute;
     display: flex;
-    left: 127px;
+    left: 146.5px;
 }
 
 .carousel {
@@ -321,7 +321,6 @@ header button{
     background: white;
     color: rgb(93, 89, 89);
     font-size: 30px;
-    margin: auto;
     display: flex;
     align-items: center;
 }
