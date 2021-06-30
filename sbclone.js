@@ -34,25 +34,45 @@ function openTab(evt, drinkSize){
     evt.currentTarget.className += "active";
 }
 
+//Extras Section link to modal and carousel
+
 var modal = document.querySelector(".modalContent");
 
+var modaltwo = document.querySelector(".modalContent.two")
+
 var btn = document.getElementById("modalBtn");
+
+var btnscnd = document.getElementById("modalBtntwo");
+
+var btnthrd = document.getElementById("modalBtnthree");
 
 var mask = document.querySelector(".mask");
 
 var closetab = document.querySelector(".close");
 
-closetab.onclick = (() => modal.style.display = "none");
+closetab.onclick = (() => {
+    modal.style.display = "none"
+    document.body.style.overflow = "auto";
+});
 
 modal.style.display = "none";
+modaltwo.style.display = "none"
+btnscnd.onclick = function() {
+    modaltwo.style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
 btn.onclick = function() {
     modal.style.display = "flex";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
 }
 
 window.onclick = function(event) {
     if (event.target == mask) {
         modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+    else if(event.target == mask) {
+        modaltwo.style.display = "none";
         document.body.style.overflow = "auto";
     }
 }
@@ -63,6 +83,7 @@ window.onclick = function(event) {
     btn.onclick =modal.style.display = "flex";
 }*/
 
+//Carousel functionallity
 var track = document.querySelector(".modallist");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".carousel.ok.right");
@@ -88,14 +109,29 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-slide');
 }
 
+const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+    if(targetIndex === 0){
+        prevButton.classList.add('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    } else if(targetIndex === slides.length - 1) {
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.add('is-hidden');
+    } else{
+        prevButton.classList.remove('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    }
+}
+
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
-    
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
+    hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
 
 nextButton.addEventListener('click', e => {
@@ -103,9 +139,11 @@ nextButton.addEventListener('click', e => {
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
    
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
+    hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
 dotsNav.addEventListener('click', e => {
@@ -121,15 +159,6 @@ dotsNav.addEventListener('click', e => {
 
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-
-    if(targetIndex === 0){
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    } else if(targetIndex === slides.length - 1) {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
-    } else{
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    }
+    hideShowArrows(slides, prevButton, nextButton, targetIndex);
+    
 })

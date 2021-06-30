@@ -12,8 +12,8 @@ button{
 }
 
 .header{
-    padding: 10px 30px;
-    background-color: #f1f8f6;
+    padding: 0px 30px;
+    background-color: white;
     z-index: 1000;
 }
 .navbar{
