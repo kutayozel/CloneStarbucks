@@ -38,13 +38,7 @@ function openTab(evt, drinkSize){
 
 var modal = document.querySelector(".modalContent");
 
-var modaltwo = document.querySelector(".modalContent.two")
-
 var btn = document.getElementById("modalBtn");
-
-var btnscnd = document.getElementById("modalBtntwo");
-
-var btnthrd = document.getElementById("modalBtnthree");
 
 var mask = document.querySelector(".mask");
 
@@ -56,11 +50,6 @@ closetab.onclick = (() => {
 });
 
 modal.style.display = "none";
-modaltwo.style.display = "none"
-btnscnd.onclick = function() {
-    modaltwo.style.display = "flex";
-    document.body.style.overflow = "hidden";
-}
 btn.onclick = function() {
     modal.style.display = "flex";
     document.body.style.overflow = "hidden";
@@ -71,10 +60,6 @@ window.onclick = function(event) {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
     }
-    else if(event.target == mask) {
-        modaltwo.style.display = "none";
-        document.body.style.overflow = "auto";
-    }
 }
 
 //window.onclick = ((a) => console.log(a.target));
@@ -83,7 +68,7 @@ window.onclick = function(event) {
     btn.onclick =modal.style.display = "flex";
 }*/
 
-//Carousel functionallity
+//Carousel functionality
 var track = document.querySelector(".modallist");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".carousel.ok.right");
@@ -92,7 +77,7 @@ const dotsNav = document.querySelector('.dots');
 const dots = Array.from(dotsNav.children);
 
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+// const slideWidth = slides[0].getBoundingClientRect().width;
 
 slides[0].style.left = '0px';
 slides[1].style.left = '380px';

@@ -199,7 +199,9 @@ header button{
 .widgetcontent{
     padding: 0px 15px;
 }
-
+.two.modalContent{
+    display: flex;
+}
 .modalContent{
     display: none;
     position: fixed;
